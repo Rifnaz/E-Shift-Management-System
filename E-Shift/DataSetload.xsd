@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetload" targetNamespace="http://tempuri.org/DataSetload.xsd" xmlns:mstns="http://tempuri.org/DataSetload.xsd" xmlns="http://tempuri.org/DataSetload.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="E_ShiftConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="E_ShiftConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.E_Shift.Properties.Settings.GlobalReference.Default.E_ShiftConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetload" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSetload" msprop:Generator_DataSetName="DataSetload">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="load" msprop:Generator_RowEvHandlerName="loadRowChangeEventHandler" msprop:Generator_RowDeletedName="loadRowDeleted" msprop:Generator_RowDeletingName="loadRowDeleting" msprop:Generator_RowEvArgName="loadRowChangeEvent" msprop:Generator_TablePropName="load" msprop:Generator_RowChangedName="loadRowChanged" msprop:Generator_RowChangingName="loadRowChanging" msprop:Generator_TableClassName="loadDataTable" msprop:Generator_RowClassName="loadRow" msprop:Generator_TableVarName="tableload" msprop:Generator_UserTableName="load">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LoadID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="LoadID" msprop:Generator_ColumnPropNameInTable="LoadIDColumn" msprop:Generator_ColumnVarNameInTable="columnLoadID" msprop:Generator_UserColumnName="LoadID" type="xs:int" />
+              <xs:element name="JobID" msprop:Generator_ColumnPropNameInRow="JobID" msprop:Generator_ColumnPropNameInTable="JobIDColumn" msprop:Generator_ColumnVarNameInTable="columnJobID" msprop:Generator_UserColumnName="JobID" type="xs:int" minOccurs="0" />
+              <xs:element name="CustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_UserColumnName="CustomerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lorry" msprop:Generator_ColumnPropNameInRow="Lorry" msprop:Generator_ColumnPropNameInTable="LorryColumn" msprop:Generator_ColumnVarNameInTable="columnLorry" msprop:Generator_UserColumnName="Lorry" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Driver" msprop:Generator_ColumnPropNameInRow="Driver" msprop:Generator_ColumnPropNameInTable="DriverColumn" msprop:Generator_ColumnVarNameInTable="columnDriver" msprop:Generator_UserColumnName="Driver" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Assistant" msprop:Generator_ColumnPropNameInRow="Assistant" msprop:Generator_ColumnPropNameInTable="AssistantColumn" msprop:Generator_ColumnVarNameInTable="columnAssistant" msprop:Generator_UserColumnName="Assistant" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Container" msprop:Generator_ColumnPropNameInRow="Container" msprop:Generator_ColumnPropNameInTable="ContainerColumn" msprop:Generator_ColumnVarNameInTable="columnContainer" msprop:Generator_UserColumnName="Container" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Products" msprop:Generator_ColumnPropNameInRow="Products" msprop:Generator_ColumnPropNameInTable="ProductsColumn" msprop:Generator_ColumnVarNameInTable="columnProducts" msprop:Generator_UserColumnName="Products" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:load" />
+      <xs:field xpath="mstns:LoadID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

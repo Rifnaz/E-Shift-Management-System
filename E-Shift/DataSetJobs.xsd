@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetJobs" targetNamespace="http://tempuri.org/DataSetJobs.xsd" xmlns:mstns="http://tempuri.org/DataSetJobs.xsd" xmlns="http://tempuri.org/DataSetJobs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="E_ShiftConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="E_ShiftConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.E_Shift.Properties.Settings.GlobalReference.Default.E_ShiftConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetJobs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSetJobs" msprop:Generator_DataSetName="DataSetJobs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="jobs" msprop:Generator_RowEvHandlerName="jobsRowChangeEventHandler" msprop:Generator_RowDeletedName="jobsRowDeleted" msprop:Generator_RowDeletingName="jobsRowDeleting" msprop:Generator_RowEvArgName="jobsRowChangeEvent" msprop:Generator_TablePropName="jobs" msprop:Generator_RowChangedName="jobsRowChanged" msprop:Generator_RowChangingName="jobsRowChanging" msprop:Generator_TableClassName="jobsDataTable" msprop:Generator_RowClassName="jobsRow" msprop:Generator_TableVarName="tablejobs" msprop:Generator_UserTableName="jobs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JobID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="JobID" msprop:Generator_ColumnPropNameInTable="JobIDColumn" msprop:Generator_ColumnVarNameInTable="columnJobID" msprop:Generator_UserColumnName="JobID" type="xs:int" />
+              <xs:element name="CustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_UserColumnName="CustomerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StartLocation" msprop:Generator_ColumnPropNameInRow="StartLocation" msprop:Generator_ColumnPropNameInTable="StartLocationColumn" msprop:Generator_ColumnVarNameInTable="columnStartLocation" msprop:Generator_UserColumnName="StartLocation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Destination" msprop:Generator_ColumnPropNameInRow="Destination" msprop:Generator_ColumnPropNameInTable="DestinationColumn" msprop:Generator_ColumnVarNameInTable="columnDestination" msprop:Generator_UserColumnName="Destination" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:jobs" />
+      <xs:field xpath="mstns:JobID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
